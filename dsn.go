@@ -20,6 +20,10 @@ type dbinfo struct {
 	Port     int    `json:"port"`
 }
 
+func (dv *DsnVar) Help() string {
+	return "user:pass@protocol(ip:port)/db or dbinfo.json. see https://pkg.go.dev/database/sql#Open"
+}
+
 func (dv *DsnVar) json2dsn(fname string) (string, error) {
 	bytes, err := ioutil.ReadFile(fname)
 	if err != nil {
