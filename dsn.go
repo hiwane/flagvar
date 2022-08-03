@@ -65,6 +65,7 @@ func (dv *DsnVar) Set(opt string) error {
 	if !dv.isDsnFormat(dsn) {
 		return fmt.Errorf("invalid format")
 	}
+	dv.dsn = dsn
 	return nil
 }
 
