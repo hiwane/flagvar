@@ -71,3 +71,8 @@ func (dv *DsnVar) Set(opt string) error {
 func (dv *DsnVar) String() string {
 	return dv.dsn
 }
+
+func (dv *DsnVar) Value() string {
+	return dv.dsn
+}
+
