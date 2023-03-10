@@ -76,4 +76,3 @@ func (dv *DsnVar) String() string {
 func (dv *DsnVar) Value() string {
 	return dv.dsn
 }
-

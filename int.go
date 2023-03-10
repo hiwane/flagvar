@@ -41,3 +41,7 @@ func (dv *IntVar) String() string {
 func (dv *IntVar) Value() (int, bool) {
 	return dv.val, dv.assigned
 }
+
+func (dv *IntVar) IsAssigned() bool {
+	return dv.assigned
+}

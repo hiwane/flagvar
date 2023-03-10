@@ -24,3 +24,7 @@ func (dv *StrVar) String() string {
 func (dv *StrVar) Value() (string, bool) {
 	return dv.val, dv.assigned
 }
+
+func (dv *StrVar) IsAssigned() bool {
+	return dv.assigned
+}
